@@ -9,6 +9,7 @@ const { useEffect } = require("react");
 let User = () => {
   let dispatch = useDispatch();
 
+
   const [noOfuser, setNoUser] = useState([]);
   const [loading, setLoading] = useState(false);
   const [user, setUser] = useState(null);
@@ -16,6 +17,7 @@ let User = () => {
   let getUsers = async () => {
     try {
       let res = await axios.get("https://reqres.in/api/users?page=1/");
+
       // storing data in redux store
       dispatch(saveUser(res.data));
       setNoUser(res.data.data);
@@ -28,11 +30,18 @@ let User = () => {
     getUsers();
   }, []);
 
-  // event bubbling 
+  // event bubbling
   let handleBubble = async (e) => {
     if (e.target.nodeName !== "BUTTON") return;
+
     try {
       let id = e.target.innerText;
+
+      if (document.querySelector(".active")) {
+        document.querySelector(".active").classList.remove("active");
+      }
+
+      e.target.classList.add("active");
 
       setLoading(true);
 

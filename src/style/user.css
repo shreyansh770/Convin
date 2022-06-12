@@ -83,6 +83,11 @@ body {
     border-radius: 20px;
 }
 
+.active{
+  /* border:none; */
+  color: lightblue;
+}
+
 .btn-div button:hover{
      
     border:none;
