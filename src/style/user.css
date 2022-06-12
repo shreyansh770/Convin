@@ -1,0 +1,96 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.user-infoBox {
+  position: absolute;
+  /* margin: 1px solid red; */
+  width: 820px;
+  height: 450px;
+  left: 30%;
+  top: 28%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info-box {
+    width: 100%;
+    height: 75%;
+    border: 1px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.user_ne {
+  width: 90%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user_ne h2{
+    font-size: 3.5rem;
+    font-family: ui-sans-serif;
+}
+
+.user_ne_img{
+    width: 15%;
+    height: 80%;
+    border-radius: 50%;
+}
+
+.user_ne_img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.user-basics {
+  width: 90%;
+  height: 30%;
+}
+
+.user-basics h4{
+    font-size: 2rem;
+    margin-top: 1rem;
+    font-family: serif;
+}
+
+.indv-btn {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+ 
+.btn-div{
+    width: 12%;
+    height: 100%;
+}
+
+.btn-div button{
+    background: white;
+    height: 100%;
+    width: 100%;
+    font-size: 3.5rem;
+    text-align: center;
+    border: 1px solid lightgrey;
+    border-radius: 20px;
+}
+
+.btn-div button:hover{
+     
+    border:none;
+    background-color: lightgray;
+    color: white;
+}
+
+.btn-div button:active{
+    box-shadow: 0 5px lightgrey;
+    transform: translate(2px);
+}
